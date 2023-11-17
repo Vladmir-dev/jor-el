@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/olamagri-primary-logo.webp";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -20,25 +21,31 @@ const Navbar = () => {
   const items = [
     {
       name: "About Us",
-      submenu: true,
+      to: "about",
+      submenu: false,
       subitems: [
         {
           name: "Our LeaderShip",
+          to: "/",
         },
         {
           name: "Ethics & Compliance",
+          to: "/",
         },
       ],
     },
     {
       name: "Products & Services",
-      submenu: true,
+      to: "/",
+      submenu: false,
       subitems: [
         {
           name: "Grains & Oil seeds",
+          to: "/",
         },
         {
           name: "Edible Oils",
+          to: "/",
         },
       ],
     },
@@ -54,15 +61,21 @@ const Navbar = () => {
       // className="w-full flex justify-center fixed items-center group/nav hover:bg-black duration-500 h-auto z-100"
     >
       <div className="w-full flex justify-around items-center p-3 h-auto ">
-        <h1 className="text-[30px]">Jor-El  </h1>
+        <Link to="/">
+        <h1 className="text-[30px]">Jor-El </h1>
+        </Link>
+        
         {/* <img src={logo} alt="logo" className="w-[280px]" /> */}
 
         <div className="flex text-[19px] gap-10">
           {items.map((item, index) => (
             <div key={index} className="group/menu ">
-              <h1 className="group-hover/nav:text-green-500 duration-500 font-bold aboslute">
-                {item.name}
-              </h1>
+              <Link to={`/${item.to}`}>
+                <h1 className="group-hover/nav:text-green-500 duration-500 font-bold aboslute">
+                  {item.name}
+                </h1>
+              </Link>
+
               <div className="absolute hidden group-hover/menu:block z-1 bg-white shadow-md">
                 {item.submenu &&
                   item.subitems.map((sitem, index) => (
