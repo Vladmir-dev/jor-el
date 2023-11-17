@@ -18,13 +18,13 @@ const About = () => {
     <div>
       <Navbar />
       <Carousel height={"80vh"} item={item} />
-      <div className="m-20 flex justify-between">
-        <h2 className="text-[50px]">
+      <div className="md:m-20 p-2 flex md:flex-row flex-col justify-between">
+        <h2 className="md:text-[50px] text-[35px] md:text-left text-center">
           {" "}
           <h2 className="text-green-300"> We’re a trusted partner</h2> across
           the supply chain.{" "}
         </h2>
-        <p className="w-[40%] text-[20px]">
+        <p className="md:w-[40%] text-[20px]">
           We unlock value for customers, enable farming communities to prosper
           sustainably and strive for a food-secure future. We’re a market
           leading and differentiated agri-business, focused on high-growth

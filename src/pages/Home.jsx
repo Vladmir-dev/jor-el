@@ -9,7 +9,7 @@ import seseme from "../assets/seeds.png";
 
 const Home = () => {
   const item = {
-    title: "Bridging The Gap Between Gender Equity In Agriculture",
+    title: "Reducing Crop Loss To Improve Food Security",
     description:
       "Deal with hyperpigmentation, Mpanies skin lightening products are formulated to evenout skin tone and restore skin's natiral color get even, clear and radiant skin",
     image: seseme,
@@ -17,6 +17,7 @@ const Home = () => {
     iw: "50%",
     bg: "bg-white",
   };
+  
   return (
     <div className="flex flex-col box-border">
       <Navbar />
