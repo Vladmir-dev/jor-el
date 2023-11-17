@@ -5,7 +5,7 @@ import Experience from "../components/Experience";
 import Products from "../components/Products";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-import seseme from "../assets/sesme.png";
+import seseme from "../assets/seeds.png";
 
 const Home = () => {
   const item = {
@@ -13,8 +13,8 @@ const Home = () => {
     description:
       "Deal with hyperpigmentation, Mpanies skin lightening products are formulated to evenout skin tone and restore skin's natiral color get even, clear and radiant skin",
     image: seseme,
-    ih: "50%",
-    iw: "40%",
+    ih: "60%",
+    iw: "50%",
     bg: "bg-white",
   };
   return (
