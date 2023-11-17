@@ -17,11 +17,11 @@ const Home = () => {
     iw: "50%",
     bg: "bg-white",
   };
-  
+
   return (
     <div className="flex flex-col box-border">
       <Navbar />
-      <Carousel height={"100vh"} item={item} />
+      <Carousel height={"80vh"} item={item} />
       <Experience />
       <Products />
       <Banner />

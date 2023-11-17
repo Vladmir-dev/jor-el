@@ -15,6 +15,7 @@ const Carousel = ({ height, item }) => {
   return (
     <Slider {...settings}>
       <div
+      //  style={{height:height}}
         className={`flex justify-center items-center ${item.bg} w-[100vw] h-[${height}]`}
       >
         <div className="w-full h-full flex justify-center items-center px-4">
