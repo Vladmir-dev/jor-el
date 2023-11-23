@@ -26,9 +26,9 @@ const Banner = () => {
               supply chains, protecting and regenerating our natural resources,
               and tackling climate change.
             </p>
-            <button className="bg-white mt-[50px] text-[25px] hover:rounded-tl-[100px] duration-500 text-black px-4 py-2">
+            {/* <button className="bg-white mt-[50px] text-[25px] hover:rounded-tl-[100px] duration-500 text-black px-4 py-2">
               Discover More
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

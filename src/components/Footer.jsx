@@ -8,7 +8,7 @@ const Footer = () => {
       name: "Quick Links",
       submenu: true,
       subitems: [
-        { name: "COntact Us" },
+        { name: "Contact Us" },
         { name: "About Us" },
         { name: "Terms Of Use" },
       ],
@@ -43,9 +43,9 @@ const Footer = () => {
           enquiring about one of our products or partnering with us, we want to
           hear from you.
         </p>
-        <button className="text-black bg-white px-4 py-2 hover:rounded-tl-[100px] duration-500 mt-[30px]">
+        {/* <button className="text-black bg-white px-4 py-2 hover:rounded-tl-[100px] duration-500 mt-[30px]">
           Contact Us
-        </button>
+        </button> */}
         {/* <QuestionAnswerOutlinedIcon className="text-green-300 text-[60px]" /> */}
       </div>
       <hr className="border border-solid border-[2px] border-green-300" />

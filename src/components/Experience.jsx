@@ -99,9 +99,9 @@ const Experience = () => {
                 understanding second to none.{" "}
               </p>
             </div>
-            <button className="bg-white text-black py-2 px-4 mt-[15px] hover:rounded-tl-[100px] duration-500">
+            {/* <button className="bg-white text-black py-2 px-4 mt-[15px] hover:rounded-tl-[100px] duration-500">
               Discover More{" "}
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
