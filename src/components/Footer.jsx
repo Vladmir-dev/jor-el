@@ -22,11 +22,19 @@ const Footer = () => {
       ],
     },
     {
-      name: "Social",
+      name: "Contact",
+      submenu:true,
+      subitems: [
+        {
+          name: "jorelagriexporters@gmail.com",
+        },
+      ],
     },
   ];
+
   return (
     <div className="bg-black">
+      <div class="inset-x-0 top-0 h-16 bg-gray-800 rounded-b-full"></div>
       <div className="text-white p-6 flex justify-center items-center flex-col">
         <img src={chat} alt="chat" />
         <h1 className="text-[30px] font-bold">Talk To Us</h1>

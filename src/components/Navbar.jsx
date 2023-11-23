@@ -34,7 +34,7 @@ const Navbar = () => {
   const links = [
     {
       name: "About Us",
-      to: "about",
+      to: "/about",
       submenu: false,
       subitems: [
         {

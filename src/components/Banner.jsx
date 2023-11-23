@@ -1,5 +1,5 @@
 import React from "react";
-import riceh from "../assets/large-rice-harvester.webp";
+import riceh from "../assets/tract.jpg";
 
 const Banner = () => {
   const bstyles = {
@@ -17,7 +17,7 @@ const Banner = () => {
         <div className="flex md:flex-row flex-col p-4 justify-between items-start md:m-10">
           <h1 className="md:text-[50px] text-[35px] md:text-left text-center font-bold text-white">
             Striving for a <br />{" "}
-            <h1 className="text-yellow-500"> Food-Secure Future</h1>
+            <h1 className="text-green-500"> Food-Secure Future</h1>
           </h1>
           <div className="md:w-[40%] text-white flex flex-col justify-center md:justify-start items-center md:items-start">
             <p className="text-[20px] md:text-left text-center">

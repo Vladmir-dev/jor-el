@@ -2,6 +2,10 @@ import React from "react";
 import metric from "../assets/metric.webp";
 import cardo from "../assets/card-overlay.webp";
 import sky from "../assets/sky.jpg";
+import customers from "../assets/metric-icon2.webp";
+import countries from "../assets/metric-icon3.webp";
+import employees from "../assets/metric-icon4.webp";
+import Slider from "./Slider";
 
 const Experience = () => {
   const bgstyle = {
@@ -11,30 +15,30 @@ const Experience = () => {
   const experience = [
     {
       name: "Manufacturing & Processing Facilities",
-      value: "60",
+      value: "10",
       url: metric,
     },
     {
-      name: "Manufacturing & Processing Facilities",
-      value: "60",
-      url: metric,
+      name: "Customers",
+      value: "20+",
+      url: customers,
     },
     {
-      name: "Manufacturing & Processing Facilities",
-      value: "60",
-      url: metric,
+      name: "Countries",
+      value: "5+",
+      url: countries,
     },
     {
-      name: "Manufacturing & Processing Facilities",
-      value: "60",
-      url: metric,
+      name: "Employees",
+      value: "200+",
+      url: employees,
     },
   ];
   return (
-    <div className="flex  mt-[50px] bg-black flex-col w-full">
+    <div className="flex   bg-black flex-col w-full">
       <div className="md:h-[100vh] flex md:flex-row flex-col md:justify-around  p-10  md:flex-wrap">
-        <div className="text-white gap-10 flex flex-wrap md:w-[30%] text-left">
-          <h1 className="text-white md:text-[65px] text-[35px] font-bold">
+        <div className="text-white  flex md:w-[45%] flex-wrap  text-left">
+          <h1 className="text-white md:text-[65px] text-[35px] text-start font-bold">
             We Offer Our{" "}
             <h1 className="text-green-300">
               {" "}
@@ -42,8 +46,7 @@ const Experience = () => {
             </h1>{" "}
             Of Market needs
           </h1>
-
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-2 text-[20px]">
             <p>
               We have over 33 years of experience in supply chains across the
               world with foundations built from our on-the-ground presence in
@@ -60,11 +63,14 @@ const Experience = () => {
 
         <div className="text-white md:grid md:mt-0 mt-[30px] md:grid-cols-2 relative gap-10">
           {experience.map((item, index) => (
-            <div key={index} className="flex flex-col items-center flex-wrap justify-center">
+            <div
+              key={index}
+              className="flex flex-col items-center flex-wrap justify-center"
+            >
               <img src={item.url} className="md:w-[150px] w-[100px]" />
               <div className="text-center flex-wrap">
                 <h3 className="md:text-[55px] font-bold">{item.value}</h3>
-                <h3>{item.name}</h3>
+                <h3 className="text-[25px]">{item.name}</h3>
               </div>
             </div>
           ))}
@@ -73,8 +79,8 @@ const Experience = () => {
 
       <div className=" mt-[20px] relative text-white md:p-10 p-5">
         <div className="flex md:flex-row flex-col relative md:justify-around">
-          <div className="bg-white md:w-[800px] md:h-[600px] rounded-tr-[100px] rounded-bl-[100px] md:flex md:justify-end">
-            <img src={cardo} className="md:max-w-[1000px]" />
+          <div className="max-w-[500px] max-h-[200px]">
+            <Slider />
           </div>
 
           <div className="md:w-[35%] md:mt-0 mt-[30px] flex flex-col md:justify-start md:items-start justify-center items-center">
