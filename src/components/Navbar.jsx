@@ -96,7 +96,7 @@ const Navbar = () => {
           tabindex="0"
           className={
             open
-              ? "flex md:flex-row flex-col ml-[-40px] mt-[-50px] md:overflow-0 md:ml-0 md:h-auto  md:p-0 p-4 md:bg-inherit md:justify-center md:items-center items-start justify-start md:relative fixed md:top-0 top-[130px]  bg-black  md:w-auto  w-full list-none gap-8 text-[20px]"
+              ? "flex md:flex-row flex-col ml-[-40px] mt-[-50px] md:overflow-0 md:ml-0 md:h-auto  md:p-0 p-4 md:bg-inherit md:justify-center bg-green-600 md:items-center items-start justify-start md:relative fixed md:top-0 top-[130px]  bg-black  md:w-auto  w-full list-none gap-8 text-[20px]"
               : "hidden md:block md:flex md:flex-row md:list-none md:gap-8 text-[20px] md:flex md:justify-center md:items-center"
           }
         >
@@ -117,7 +117,7 @@ const Navbar = () => {
               </Link>
 
               {drop === index && (
-                <div className="md:absolute  p-4   md:shadow-md">
+                <div className="md:absolute  p-4  md:shadow-md">
                   {item.submenu ? (
                     <div className="flex md:bg-white p-4 flex-col gap-5 justify-evenly">
                       {item.subitems.map((ele, index) => (
