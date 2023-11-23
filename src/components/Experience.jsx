@@ -35,8 +35,8 @@ const Experience = () => {
     },
   ];
   return (
-    <div className="flex   bg-black flex-col w-full">
-      <div className="md:h-[100vh] flex md:flex-row flex-col md:justify-around  p-10  md:flex-wrap">
+    <div className="flex  justify-center items-center bg-black flex-col w-full">
+      <div className="md:h-auto flex md:flex-row flex-col md:justify-around justify-center items-center m-10 p-10">
         <div className="text-white  flex md:w-[45%] flex-wrap  text-left">
           <h1 className="text-white md:text-[65px] text-[35px] text-start font-bold">
             We Offer Our{" "}
