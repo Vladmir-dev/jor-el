@@ -44,7 +44,7 @@ const Navbar = () => {
         },
         {
           name: "Ethics & Compliance",
-          to: "/",
+          to: "/about/ethics-compliance",
         },
       ],
     },
