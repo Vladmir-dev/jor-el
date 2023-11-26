@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../components/Navbar";
 
 const EthicsCompliance = () => {
   return (
-    <div>EthicsCompliance</div>
-  )
-}
+    <div>
+      <Navbar />
+    </div>
+  );
+};
 
-export default EthicsCompliance
+export default EthicsCompliance;

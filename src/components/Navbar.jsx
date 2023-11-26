@@ -40,7 +40,7 @@ const Navbar = () => {
       subitems: [
         {
           name: "Our LeaderShip",
-          to: "/",
+          to: "/about/our-leadership",
         },
         {
           name: "Ethics & Compliance",
@@ -48,21 +48,21 @@ const Navbar = () => {
         },
       ],
     },
-    {
-      name: "Products & Services",
-      to: "/",
-      submenu: true,
-      subitems: [
-        {
-          name: "Grains & Oil seeds",
-          to: "/",
-        },
-        {
-          name: "Edible Oils",
-          to: "/",
-        },
-      ],
-    },
+    // {
+    //   name: "Products & Services",
+    //   to: "/",
+    //   submenu: true,
+    //   subitems: [
+    //     {
+    //       name: "Grains & Oil seeds",
+    //       to: "/",
+    //     },
+    //     {
+    //       name: "Edible Oils",
+    //       to: "/",
+    //     },
+    //   ],
+    // },
   ];
   console.log("menu ===>", menu);
   return (
@@ -119,12 +119,12 @@ const Navbar = () => {
                   </Link>
 
                   {drop === index && (
-                    <div className="md:absolute md:bg-black bg-inherit w-full left-0 p-4  md:shadow-md">
+                    <div className="md:absolute md:bg-black bg-inherit w-full left-0 p-10 duration-500  md:shadow-md">
                       {item.submenu ? (
-                        <div className="flex p-4 md:flex-row flex-col p-16 gap-5 justify-evenly">
+                        <div className="flex p-4 md:flex-row flex-col p-16 gap-5 justify-evenly duration-500">
                           {item.subitems.map((ele, index) => (
                             <div key={index} className="">
-                              <Link to={`/category/${item.name}`}>
+                              <Link to={`${ele.to}`}>
                                 <h4 className="hover:text-green-500">
                                   {ele.name}
                                 </h4>
@@ -141,15 +141,13 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          
         </div>
         <div className="w-full">
-        {show && (
-          <hr className="border border-solid border-[2px] duration-500 border-white w-[100%]" />
-        )}
+          {show && (
+            <hr className="border border-solid border-[2px] duration-500 border-white w-[100%]" />
+          )}
+        </div>
       </div>
-      </div>
-      
     </div>
   );
 };
