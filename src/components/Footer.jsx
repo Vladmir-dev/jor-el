@@ -33,8 +33,8 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-black">
-      <div class="bg-white">
+    <div className="bg-black mb-[-100px] border-none">
+      <div class="bg-white border-none">
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ const Footer = () => {
         </svg>
       </div>
 
-      <div className="text-white p-6 flex justify-center items-center flex-col">
+      <div className="text-white p-6 flex justify-center items-center bg-black flex-col">
         <img src={chat} alt="chat" />
         <h1 className="text-[30px] font-bold">Talk To Us</h1>
         <p className="text-[20px] md:text-left text-center">

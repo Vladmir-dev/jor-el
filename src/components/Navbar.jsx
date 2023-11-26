@@ -66,11 +66,11 @@ const Navbar = () => {
   ];
   console.log("menu ===>", menu);
   return (
-    <div>
+    <div className="flex flex-col">
       <div
         className={
           show
-            ? "w-full bg-green-600 flex flex-col justify-center items-center  top-0 fixed z-10 shadow-md group/nav hover:bg-black  text-white duration-500"
+            ? "w-full bg-black flex flex-col justify-center items-center  top-0 fixed z-10 shadow-md group/nav hover:bg-black  text-white duration-500"
             : "fixed w-full  flex flex-col justify-center items-center z-10  top-0 group/nav hover:bg-black hover:text-white duration-500"
         }
         // className="w-full flex justify-center fixed items-center group/nav hover:bg-black duration-500 h-auto z-100"
@@ -113,7 +113,7 @@ const Navbar = () => {
                     to={`${item.to}`}
                     className="hover:text-green-500 duration-500"
                   >
-                    <li className="text-[25px] sm:text-[18px] md:text-md">
+                    <li className="text-[25px] sm:text-[18px] md:text-[25px]">
                       {item.name}
                     </li>
                   </Link>
@@ -141,24 +141,15 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
+          
         </div>
-
-        {/* {drop === "About Us" ||
-        (drop === "Products & Services" && (
-          <div className="submenu-container">
-            {menu.subitems.map((item, index) => (
-              <Link key={index} to={item.to} className="submenu-item">
-                {item.name}
-              </Link>
-            ))}
-          </div>
-        ))} */}
-      </div>
-      <div className="w-full">
+        <div className="w-full">
         {show && (
-          <hr className="border border-solid border-[2px] duration-500 border-white w-full" />
+          <hr className="border border-solid border-[2px] duration-500 border-white w-[100%]" />
         )}
       </div>
+      </div>
+      
     </div>
   );
 };
