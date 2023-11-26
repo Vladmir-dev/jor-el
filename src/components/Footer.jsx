@@ -23,7 +23,7 @@ const Footer = () => {
     },
     {
       name: "Contact",
-      submenu:true,
+      submenu: true,
       subitems: [
         {
           name: "jorelagriexporters@gmail.com",
@@ -34,7 +34,26 @@ const Footer = () => {
 
   return (
     <div className="bg-black">
-      <div class="inset-x-0 top-0 h-16 bg-gray-800 rounded-b-full"></div>
+      <div class="bg-white">
+        <svg
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1920.000000 72.000000"
+          preserveAspectRatio="xMidYMid meet"
+          
+        >
+          <g
+            transform="translate(0.000000,72.000000) scale(0.100000,-0.100000)"
+            stroke="none"
+          >
+            <path
+              d="M8540 714 c-1252 -31 -1677 -46 -2595 -94 -1723 -91 -3562 -248 -4915 -421 -498 -63 -806 -112 -952 -151 -78 -20 -92 -30 -62 -42 26 -10 19184 -7 19184 3 0 42 -1102 197 -2240 316 -1870 194 -3606 309 -5690 376 -302 10 -2449 20 -2730 13z"
+             
+            ></path>
+          </g>
+        </svg>
+      </div>
+
       <div className="text-white p-6 flex justify-center items-center flex-col">
         <img src={chat} alt="chat" />
         <h1 className="text-[30px] font-bold">Talk To Us</h1>
